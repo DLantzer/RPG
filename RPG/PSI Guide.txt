@@ -1,0 +1,534 @@
+I.PSI Moves
+     Offense
+        PK Love
+        PK Flash
+        PK Starstorm
+        PK Fire
+        PK Freeze
+        PK Thunder
+        PK Ground     
+     Recover
+        Lifeup
+        Healing
+        Refresh
+        PSI Magnet
+     Assist
+        Shield
+        Counter
+        Psycho-Shield
+        Psycho-Counter
+        Offense Up
+        Defense Up
+        Hypnosis
+        Paralysis
+        Brainshock
+        Offense Down
+        Defense Down
+
+II.Contact Info
+
+
+
+---------------------
+I.PSI Moves
+---------------------
+ 
+ -OFFENSE
+
+     -PK Love
+      (aka PSI Rockin in EarthBound)
+      NOTE: The name of this attack will be whatever you entered as your
+            "favorite thing" at the very beginning of the game.
+
+      This is Lucas's special PSI attack. Each version of this attack is
+      learned when you reach a certain point in the game. It is a powerful move
+      that inflicts a significant amount of damage to all enemies on screen,
+      but it consumes quite a bit of PP.
+
+     
+      Alpha
+
+       PP Cost: 10
+       Damage: 120~160 HP
+
+      Beta
+
+       PP Cost: 20
+       Damage: 220~260 HP
+
+      Gamma
+
+       PP Cost: 35
+       Damage: 430~500 HP
+
+      Omega
+
+       PP Cost: 50
+       Damage: 800~860 HP
+
+
+     -PK Flash
+
+      PP Cost: 12
+
+      This attack randomly causes uncontrollable crying, feeling strange,
+      paralysis, or instant defeat. Lucas learns this move when you reach a
+      certain point in the game, and there is only one version of this attack.
+
+    
+
+     -PK Starstorm
+
+      PP Cost: 48
+      Damage: 650~750 HP
+
+      This is Kumatora's equivalent of PK Love, and she learns it when you
+      complete a particular chapter. It inflicts damage to all enemies on
+      screen, and it is slightly weaker than Lucas's PK Love[omega]. There is
+      only one version of this attack.
+   
+
+     -PK Fire
+
+      This attack causes fire damage to all enemies on screen. It's
+      effectiveness varies depending on the target, as some enemies are
+      vulnerable to it, while others are resistant or completely immune. It is
+      mostly useful when fighting a group of enemies or bosses that are weak
+      against fire. This attack will occasionally cause its targets to catch on
+      fire (damage of about 4% of max HP per round). Organic and Organic
+      Chimera type enemies tend to be susceptible to this attack.
+
+      Alpha
+
+       PP Cost: 6
+       Level Learned: Kumatora (10)
+       Damage: 35~50 HP for neutral targets
+               80~110 HP for vulnerable targets
+
+      Beta
+
+       PP Cost: 12
+       Level Learned: Kumatora (23)
+       Damage: 75~90 HP for neutral targets
+               150~180 HP for vulnerable targets
+
+      Gamma
+
+       PP Cost: 20
+       Level Learned: Kumatora (43)
+       Damage: 120~150 HP for neutral targets
+               230~280 HP for vulnerable targets
+
+      Omega
+
+       PP Cost: 40
+       Level Learned: Kumatora (53)
+       Damage: 160~200 HP for neutral targets
+               340~380 HP for vulnerable targets
+
+
+   -PK Freeze
+
+      This attack deals ice damage to a single enemy. It's effectiveness varies
+      depending on the target, as some enemies are vulnerable to it, while
+      others are resistant or completely immune. Because of its relatively low
+      PP cost and potentially high damage, Freeze is quite useful against both
+      normal enemies and some bosses. 
+
+      Alpha
+
+       PP Cost: 5
+       Level Learned: Kumatora (10)
+       Damage: 80~100 HP for neutral targets
+               150~180 HP for vulnerable targets
+
+      Beta
+
+       PP Cost: 10
+       Level Learned: Kumatora (28)
+       Damage: 120~150 HP for neutral targets
+               230~250 HP for vulnerable targets
+
+      Gamma
+
+       PP Cost: 18
+       Level Learned: Kumatora (38)
+       Damage: 170~200 HP for neutral targets
+               370~440 HP for vulnerable targets
+
+      Omega
+
+       PP Cost: 28
+       Level Learned: Kumatora (51)
+       Damage: 230~270 HP for neutral targets
+               500~610 HP for vulnerable targets
+
+
+     -PK Thunder
+
+      Depending on what version of this attack you use, this move will summon
+      one to four lightning bolts that either strike a random enemy or hit
+      nothing at all. Its effectiveness varies depending on the target, as some
+      enemies are vulnerable to it, while others are resistant or immune.
+      
+      
+
+      Alpha
+
+       PP Cost: 7
+       Level Learned: Kumatora (13)
+       Effect: summons one bolt
+       Damage: 60~80 HP for neutral targets
+               110~150 HP for vulnerable targets
+
+      Beta
+
+       PP Cost: 15
+       Level Learned: Kumatora (32)
+       Effect: summons two bolts
+       Damage: 60~80 HP for neutral targets
+               110~150 HP for vulnerable targets
+
+      Gamma
+
+       PP Cost: 21
+       Level Learned: Kumatora (49)
+       Effect: summons three bolts
+       Damage: 100~160 HP for neutral targets
+               180~210 HP for vulnerable targets
+
+      Omega
+
+       PP Cost: 32
+       Level Learned: Kumatora (57)
+       Effect: summons four bolts
+       Damage: 100~160 HP for neutral targets
+               180~210 HP for vulnerable targets
+
+
+     -PK Ground
+
+      PP Cost: 43
+      Level Learned: Kumatora (60)
+      Effect: causes five randomly targeted hits
+      Damage: 7~10% of max HP
+
+      The last PSI move Kumatora is likely to learn is also a rather unusual
+      one. This attack will cause five randomly targeted hits. These hits will
+      never miss unless you are fighting a flying enemy, so all five hits will
+      target a single enemy if you are fighting only one. Each hit takes away
+      roughly 7~10% of the target's max HP.
+     
+
+ -RECOVER
+
+    -Lifeup
+
+      Food items play an important role in this game, but after awhile you will
+      likely start phasing out the use of food items in favor of Lifeup.
+      Recovery is absolutely essential in staying alive in this game, and
+      nothing is better or more convenient to that end than Lifeup.
+
+
+      Alpha
+
+       PP Cost: 5
+       Level Learned: Lucas (n/a)
+                      Kumatora (13)
+       Recovery: 60~70 HP
+
+      Beta
+
+       PP Cost: 9
+       Level Learned: Lucas (17)
+                      Kumatora (31)
+       Recovery: 120~150 HP
+
+      Gamma
+
+       PP Cost: 16
+       Level Learned: Lucas (43)
+       Recovery: max HP
+
+      Omega
+
+       PP Cost: 28
+       Level Learned: Lucas (50)
+       Recovery: 240~260 HP to all
+
+
+     -Healing
+
+      Almost all status effects in this game can be cured by Healing, but be
+      careful when you use this move. If you use Healing as soon as a party
+      member gets a status effect in the middle of battle, an enemy may cause
+      the same status effect again and you will have wasted one of your turns.
+      Often times, it is better to focus on attacking and use Healing after the
+      battle is over. A few status effects, such as solidification, cannot be
+      cured by Healing.
+
+     
+
+      Alpha
+
+       PP Cost: 4
+       Level Learned: Lucas (n/a)
+                      Kumatora (14)
+       Effect: removes one status effect
+
+      Beta
+
+       PP Cost: 8
+       Level Learned: Lucas (25)
+       Effect: removes all status effects
+
+      Gamma
+
+       PP Cost: 18
+       Level Learned: Lucas (39)
+       Effect: removes all status effects and revives battle weary party
+               members with full HP
+
+      Omega
+
+       PP Cost: 30
+       Level Learned: Lucas (56)
+       Effect: removes all status effects from the entire party and revives
+               party members with full HP
+
+
+     -Refresh
+
+      PP Cost: 20
+      Level Learned: Lucas (58)
+      Effect: the entire party recovers 10% of their max HP each turn for five
+              turns
+
+      This is a recovery move Lucas is likely to learn near the end of the
+      game. In most games I would not use a move like this too much, but
+      because of Mother 3's rolling HP counter, this move can potentially save
+      a party member's life.
+
+
+      PSI Magnet
+
+      This move allows Kumatora to take away an enemy's PP and add it to her
+      own. It is usually not necessary to use this move, since there are ample
+      hot springs and Amazing Capsules in the game. 
+
+      Alpha
+
+       PP Cost: 0
+       Effect: drains 2~8 PP from a single target and adds it to your own
+
+      Omega
+
+       PP Cost: 0
+       Level Learned: Kumatora (45)
+       Effect: drains 2~8 PP from all enemies and adds it to your own
+
+
+
+ -ASSIST
+
+      -Shield
+
+      This move will reduce the damage inflicted by physical attacks by 50%. It
+      can withstand up to three hits before it disappears. Shield can be very
+      useful against strong bosses and in long battles. Using this move in
+      conjunction with Defense Up or Offense Down can reduce the damage the
+      party receives by a substantial amount and turn a difficult fight into an
+      easy one. 
+
+      Alpha
+
+       PP Cost: 6
+       Level Learned: Lucas (22)
+       Effect: protects a single party member with a shield
+
+      Omega
+
+       PP Cost: 18
+       Level Learned: Lucas (35)
+       Effect: protects the entire party
+
+
+      -Counter
+
+      This move is identical to Shield, only it also reflects any inflicted
+      damage back at the enemy. 
+
+      Alpha
+
+       PP Cost: 12
+       Effect: protects a single party member
+
+      Omega
+
+       PP Cost: 28
+       Level Learned: Lucas (51)
+       Effect: protects the entire party
+
+
+    -Psycho-Shield
+
+      Psycho-Shield reduces the amount of damage inflicted by PSI attacks by
+      50%. It can withstand up to three hits before it disappears. This move
+      will probably not get as much use as the regular Shield, but it can be
+      useful in a few boss battles. 
+
+      Alpha
+
+       PP Cost: 8
+       Level Learned: Lucas (28)
+       Effect: protects a single party member
+
+      Omega
+
+       PP Cost: 20
+       Level Learned: Lucas (45)
+       Effect: protects the entire party
+
+
+     -Psycho-Counter
+
+      This move is identical to the Psycho-Shield, only it reflects any
+      inflicted damage back at the enemy. 
+
+      Alpha
+
+       PP Cost: 18
+       Level Learned: Lucas (33)
+       Effect: protects a single party member
+
+      Omega
+
+       PP Cost: 34
+       Level Learned: Lucas (53)
+       Effect: protects the entire party
+
+
+     -Offense Up
+
+      This move will increase its target's Offense by about 20% the first time,
+      8% the second and third times, and 0% thereafter. It can make a pretty
+      big difference in the amount of damage you inflict, especially if you are
+      able to compound the increase with combos. 
+
+      Alpha
+
+       PP Cost: 6
+       Effect: increases Offense of one party member
+
+      Omega
+
+       PP Cost: 18
+       Level Learned: Lucas (36)
+       Effect: increases Offense of entire party
+
+
+     -Defense Up
+
+      This move will increase its target's Defense by about 20% the first time,
+      8% the first and second times, and 0% thereafter. 
+
+      Alpha
+
+       PP Cost: 6
+       Effect: increases Defense of one party member
+
+      Omega
+
+       PP Cost: 18
+       Level Learned: Lucas (30)
+       Effect: increases Defense of entire party
+
+
+     -Hypnosis
+
+      This move, when successful, will put an enemy to sleep. Sleep can be
+      useful if you want to hear the rhythm of the battle music or want to take
+      an enemy out of a fight while fighting a group.
+
+      Alpha
+
+       PP Cost: 6
+       Level Learned: Kumatora (21)
+       Effect: targets a single enemy
+
+      Omega
+
+       PP Cost: 18
+       Level Learned: Kumatora (36)
+       Effect: targets all enemies on screen
+
+
+     -Paralysis
+
+      This move, when successful, will paralyze an enemy. While paralyzed, an
+      enemy may occasionally fail to attack and waste a turn. 
+
+      Alpha
+
+       PP Cost: 8
+       Effect: targets a single enemy
+
+      Omega
+
+       PP Cost: 24
+       Level Learned: Kumatora (29)
+       Effect: targets all enemies on screen
+
+
+     -Brainshock
+
+      This move, when successful, will make enemies feel strange. Enemies that
+      feel strange may attack itself or its cohorts, but its occurrence is
+      completely random. 
+
+      Alpha
+
+       PP Cost: 7
+       Level Learned: Kumatora (25)
+       Effect: targets a single enemy
+
+      Omega
+
+       PP Cost: 22
+       Level Learned: Kumatora (47)
+       Effect: targets all enemies on screen
+
+
+     -Offense Down
+
+      This move, when successful, will reduce the enemy's Offense by about 20%
+      the first time, 8% the second and third times, and 0% thereafter. 
+
+      Alpha
+
+       PP Cost: 7
+       Effect: targets a single enemy
+
+      Omega
+
+       PP Cost: 20
+       Level Learned: Kumatora (37)
+       Effect: targets all enemies on screen
+
+
+     -Defense Down
+
+      This move, when successful, will reduce the enemy's Defense by about 20%
+      the first time, 8% the second and third times, and 0% thereafter.
+
+      Alpha
+
+       PP Cost: 7
+       Level Learned: Kumatora (19)
+       Effect: targets a single enemy
+
+      Omega
+
+       PP Cost: 20
+       Level Learned: Kumatora (40)
+       Effect: targets all enemies on screen

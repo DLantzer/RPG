@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  RPG.cpp
+RPG.obj : error LNK2019: unresolved external symbol __imp_PlaySoundW referenced in function "public: void __cdecl SoundPlayer::playBrainshockA(void)" (?playBrainshockA@SoundPlayer@@QEAAXXZ)
+C:\Users\19lantzerandrew\source\repos\DLantzer\RPG\RPG\x64\Debug\RPG.exe : fatal error LNK1120: 1 unresolved externals
