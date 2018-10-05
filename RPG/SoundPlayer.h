@@ -7,6 +7,9 @@ public:
 	void playIntro() {
 		PlaySound(TEXT("Intro"), NULL, SND_SYNC);
 	}
+	void playBash() {
+		PlaySound(TEXT("bash"), NULL, SND_SYNC);
+	}
 	void playBrainshockA() {
 		PlaySound(TEXT("PSI Brainshock a"), NULL, SND_SYNC);
 	}

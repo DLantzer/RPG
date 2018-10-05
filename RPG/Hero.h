@@ -2,6 +2,7 @@
 #include <string>
 #include "Class.h"
 #include "Move.h"
+#include "SoundPlayer.h"
 // Hero - NPC/PC that fights an Enemy
 class Hero:public Class{
 private:
@@ -79,8 +80,10 @@ public:
 		return hp;
 	}
 	double useMove(int slot) {
+		SoundPlayer sound;
 		if (slot == 0) {
 			cout << name << " hit the enemy!" << endl;
+			sound.playBash();
 			return atk;
 		}
 		else if (slot == 1) {

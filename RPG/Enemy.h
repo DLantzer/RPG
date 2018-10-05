@@ -19,7 +19,8 @@ public:
 			move1 = Move("PSI Fire A", 2, 3);
 		}
 		name = "Enemy";
-		cout << "A level " << lvl << " enemy appeared!";
+		cout << "A level " << lvl << " enemy appeared!" << endl;
+		Pause();
 	}
 	// Returns name
 	string getName() {
@@ -51,10 +52,12 @@ public:
 	}
 	// Uses move based on slot #
 	double useMove(Hero h) {
+		SoundPlayer sound;
 		srand((unsigned)time(NULL));
 		int slot = rand() % 5;
 		if (slot == 0) {
 			cout << name << " hit " << h.getName() << "!";
+			sound.playBash();
 			return atk;
 		}
 		else if (slot == 1) {
@@ -109,5 +112,9 @@ public:
 		int num = (rand() % 25 + 1) * lvl;
 		cout << "Enemy gave " << num << " XP!" << endl;
 		return num;
+	}
+	void Pause() {
+		Sleep(3000);
+		cout << endl;
 	}
 };
