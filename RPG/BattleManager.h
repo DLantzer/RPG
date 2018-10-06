@@ -8,34 +8,56 @@ public:
 		Sleep(3000);
 		cout << endl;
 	}
-	void battle(Hero h, Enemy e) {
+	void battle(Hero& h, Enemy& e) {
 		while (h.getHP() > 0 && e.getHP() > 0) {
-			cout << "What do you wanna do?" << endl
-				<< "Enemy has " << e.getHP() << " HP" << endl
+			cout << "What do you wanna do?" << endl << endl
+				<< "Enemy has " << e.getHP() << " HP" << endl << endl
+				<< "HP: " << h.getHP() << endl
 				<< "MP: " << h.getMP() << endl
-				<< ":: 0 :: Physical" << endl
-				<< ":: 1 :: " << h.getMove(1) << endl
-				<< ":: 2 :: " << h.getMove(2) << endl
-				<< ":: 3 :: " << h.getMove(3) << endl
-				<< ":: 4 :: " << h.getMove(4) << endl 
+				<< "XP: " << h.showXP() << endl
+				<< ":: 0 :: Physical :: POW: " << h.getAtk() << endl;
+			if (h.getMove(1) != "")
+				cout << ":: 1 :: " << h.getMove(1) << " :: POW: " << h.move1.getPow() << " MP: " << h.move1.getMPUsed() << endl;
+			if (h.getMove(2) != "")
+				cout << ":: 2 :: " << h.getMove(2) << " :: POW: " << h.move2.getPow() << " MP: " << h.move2.getMPUsed() << endl;
+			if (h.getMove(3) != "")
+				cout << ":: 3 :: " << h.getMove(3) << " :: POW: " << h.move3.getPow() << " MP: " << h.move3.getMPUsed() << endl;
+			if (h.getMove(4) != "")
+				cout << ":: 4 :: " << h.getMove(4) << " :: POW: " << h.move4.getPow() << " MP: " << h.move4.getMPUsed() << endl
 				<< " :: ";
 			int move;
 			cin >> move;
 			double dmg;
 			int mp;
 			if (move == 0) { 
-				h.usePhysical(); dmg = h.getAtk(); mp = 0; cout << h.getName() << " hit the enemy!"; }
+				h.useMove(0); dmg = h.getAtk(); mp = 0;}
 			else if (move == 1) { 
-				h.useMove(1); dmg = h.move1.getPow() * h.getAtk(); mp = h.move1.getMPUsed();}
-			else if (move == 2) { 
-				h.useMove(2); dmg = h.move2.getPow() * h.getAtk(); mp = h.move2.getMPUsed();}
-			else if (move == 3) { 
-				h.useMove(3); dmg = h.move3.getPow() * h.getAtk(); mp = h.move3.getMPUsed();}
-			else if (move == 4) { 
-				h.useMove(4); dmg = h.move4.getPow() * h.getAtk(); mp = h.move4.getMPUsed();}
+				if (h.getMP() >= h.move1.getMPUsed() && h.move1.getName() != "") {
+					h.useMove(1); dmg = h.move1.getPow() * h.getAtk(); mp = h.move1.getMPUsed();
+				}
+				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
+			}
+			else if (move == 2) {
+				if (h.getMP() >= h.move2.getMPUsed() && h.move2.getName() != ""){
+					h.useMove(2); dmg = h.move2.getPow() * h.getAtk(); mp = h.move2.getMPUsed();
+				}
+				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
+			}
+			else if (move == 3) {
+				if (h.getMP() >= h.move3.getMPUsed() && h.move3.getName() != "") {
+					h.useMove(3); dmg = h.move3.getPow() * h.getAtk(); mp = h.move3.getMPUsed();
+				}
+				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
+			}
+			else if (move == 4) {
+				if (h.getMP() >= h.move4.getMPUsed() && h.move4.getName() != "") {
+					h.useMove(4); dmg = h.move4.getPow() * h.getAtk(); mp = h.move4.getMPUsed();
+				}
+				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
+			}
 			else {
 				dmg = 0; mp = 0; cout << h.getName() << " panicked!";}
-			cout << h.getName() << " dealt " << dmg << " damage.";
+			cout << h.getName() << " dealt " << dmg << " damage." << endl;
 			Pause();
 			e.setHP(-dmg);
 			h.setMP(-mp);
@@ -44,11 +66,12 @@ public:
 			if (e.getHP() <= 0) {
 				cout << h.getName() << " defeated " << e.getName() << "!";
 				Pause();
+				h.getXP(e.getXP());
 				break;
 			}
 			double heroDmg = e.useMove(h);
 			Pause();
-			cout << h.getName() << " took " << heroDmg << " damage.";
+			cout << endl << h.getName() << " took " << heroDmg << " damage." << endl;
 			Pause();
 		}
 	}
