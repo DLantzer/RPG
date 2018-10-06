@@ -4,9 +4,13 @@
 #include "Move.h"
 #include "SoundPlayer.h"
 // Hero - NPC/PC that fights an Enemy
-class Hero:public Class{
+class Hero:public Class, public SoundPlayer{
 private:
-	int experience;
+	double experience;
+	void Pause() {
+		Sleep(3000);
+		cout << endl;
+	}
 public:
 	// Constructor - Class, Name
 	Hero(int type, string nm)
@@ -38,6 +42,8 @@ public:
 			typeClass = "Cleric";
 			move1 = Move("PSI Freeze A", 4, 3);
 		}
+		hpMax = hp;
+		mpMax = mp;
 	}
 	// Modifies attack - double modifier
 	void setAtk(double mod) {
@@ -80,10 +86,9 @@ public:
 		return hp;
 	}
 	double useMove(int slot) {
-		SoundPlayer sound;
 		if (slot == 0) {
-			cout << name << " hit the enemy!" << endl;
-			sound.playBash();
+			cout << endl << name << " hit the enemy!" << endl << endl;
+			playBash();
 			return atk;
 		}
 		else if (slot == 1) {
@@ -108,6 +113,30 @@ public:
 		}
 		else { cout << name << " panicked!";
 		return 0;
+		}
+	}
+	double showXP() {
+		return experience;
+	}
+	void getXP(double XP) {
+		cout << name << " gained " << XP << " XP!";
+		Pause();
+		experience += XP;
+		cout << name << " now has " << experience << " XP.";
+		if (experience >= 50 * lvl) {
+			experience = 0;
+			mp = mpMax;
+			hp = hpMax;
+			cout << name << " leveled up!";
+			Pause();
+			++lvl;
+			srand((unsigned)time(NULL));
+			hp += rand() % 3 + 1;
+			mp += rand() % 3 + 1;
+			def -= (rand() % 2 + 1) * .01;
+			atk += (rand() % 2 + 1) * .1;
+			mpMax = mp;
+			hpMax = hp;
 		}
 	}
 };

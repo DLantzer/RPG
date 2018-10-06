@@ -6,8 +6,8 @@ class Class:public Move{
 protected:
 	bool isFrozen, isParalysed, isShielded; // Status conditions, true/false
 	string typeClass, name; // Class type, NPC/PC name
-	int mp, lvl; // Stats
-	double atk, def, hp; // Atk & Def stat, type double serves as a multiplier
+	int mp, mpMax, lvl; // Stats
+	double atk, def, hp, hpMax; // Atk & Def stat, type double serves as a multiplier
 public:
 	Move move1, move2, move3, move4; // Moveset
 	//Uses physical move purely based on attack
@@ -41,6 +41,9 @@ public:
 			<< mp << " MP" << endl
 			<< atk << " Attack" << endl
 			<< def << " Defense" << endl;
+	}
+	double getAtk() {
+		return atk;
 	}
 	// Returns name of move - Slot #
 	string getMove(int num) 
