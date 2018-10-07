@@ -23,35 +23,36 @@ public:
 			if (h.getMove(3) != "")
 				cout << ":: 3 :: " << h.getMove(3) << " :: POW: " << h.move3.getPow() << " MP: " << h.move3.getMPUsed() << endl;
 			if (h.getMove(4) != "")
-				cout << ":: 4 :: " << h.getMove(4) << " :: POW: " << h.move4.getPow() << " MP: " << h.move4.getMPUsed() << endl
-				<< " :: ";
+				cout << ":: 4 :: " << h.getMove(4) << " :: POW: " << h.move4.getPow() << " MP: " << h.move4.getMPUsed() << endl;
+			cout << " :: ";
 			int move;
 			cin >> move;
 			double dmg;
 			int mp;
+			cout << endl;
 			if (move == 0) { 
 				h.useMove(0); dmg = h.getAtk(); mp = 0;}
 			else if (move == 1) { 
 				if (h.getMP() >= h.move1.getMPUsed() && h.move1.getName() != "") {
-					h.useMove(1); dmg = h.move1.getPow() * h.getAtk(); mp = h.move1.getMPUsed();
+					h.useMove(1); h.move1.effect(); dmg = h.move1.getFinalPow() * h.getAtk(); mp = h.move1.getMPUsed();
 				}
 				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
 			}
 			else if (move == 2) {
 				if (h.getMP() >= h.move2.getMPUsed() && h.move2.getName() != ""){
-					h.useMove(2); dmg = h.move2.getPow() * h.getAtk(); mp = h.move2.getMPUsed();
+					h.useMove(2); h.move2.effect(); dmg = h.move2.getFinalPow() * h.getAtk(); mp = h.move2.getMPUsed();
 				}
 				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
 			}
 			else if (move == 3) {
 				if (h.getMP() >= h.move3.getMPUsed() && h.move3.getName() != "") {
-					h.useMove(3); dmg = h.move3.getPow() * h.getAtk(); mp = h.move3.getMPUsed();
+					h.useMove(3); h.move3.effect(); dmg = h.move3.getFinalPow() * h.getAtk(); mp = h.move3.getMPUsed();
 				}
 				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
 			}
 			else if (move == 4) {
 				if (h.getMP() >= h.move4.getMPUsed() && h.move4.getName() != "") {
-					h.useMove(4); dmg = h.move4.getPow() * h.getAtk(); mp = h.move4.getMPUsed();
+					h.useMove(4); h.move4.effect(); dmg = h.move4.getFinalPow() * h.getAtk(); mp = h.move4.getMPUsed();
 				}
 				else { dmg = 0; mp = 0; cout << h.getName() << " couldn't think straight!" << endl; }
 			}
@@ -66,6 +67,7 @@ public:
 			if (e.getHP() <= 0) {
 				cout << h.getName() << " defeated " << e.getName() << "!";
 				Pause();
+				h.reset();
 				h.getXP(e.getXP());
 				break;
 			}
@@ -73,6 +75,7 @@ public:
 			Pause();
 			cout << endl << h.getName() << " took " << heroDmg << " damage." << endl;
 			Pause();
+			h.setHP(-heroDmg);
 		}
 	}
 };

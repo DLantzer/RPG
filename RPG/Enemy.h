@@ -67,7 +67,7 @@ public:
 				return move1.getPow() * atk;
 			}
 			else {
-				cout << name << " panicked!" << endl;
+				cout << name << " panicked!";
 				return 0;
 			}
 		}
@@ -109,10 +109,10 @@ public:
 	// Returns XP based on level
 	int getXP() {
 		srand((unsigned)time(NULL));
-		int num = (rand() % 25 + 1) * lvl;
-		cout << "Enemy gave " << num << " XP!" << endl;
+		int num = (rand() % 25 + 1) * lvl * 2;
 		return num;
 	}
+	// Stops execution for 3 seconds
 	void Pause() {
 		Sleep(3000);
 		cout << endl;

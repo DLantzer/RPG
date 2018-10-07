@@ -10,6 +10,7 @@ protected:
 	double atk, def, hp, hpMax; // Atk & Def stat, type double serves as a multiplier
 public:
 	Move move1, move2, move3, move4; // Moveset
+
 	//Uses physical move purely based on attack
 	double usePhysical() {
 		srand((unsigned)time(NULL));
@@ -42,6 +43,7 @@ public:
 			<< atk << " Attack" << endl
 			<< def << " Defense" << endl;
 	}
+	// Returns atk
 	double getAtk() {
 		return atk;
 	}
