@@ -26,7 +26,7 @@ public:
 			def = .85;
 			atk = 2;
 			typeClass = "Warrior";
-			move1 = Move("PSI Fire A", 3, 3);
+			move1 = Move("PSI Fire A", 3, 2);
 		}
 		else if (type == 2) {
 			hp = 15;
@@ -60,7 +60,7 @@ public:
 		mp += mod;
 	}
 	// Modifies HP - int modifier
-	void setHP(int mod) {
+	void setHP(double mod) {
 		hp += mod;
 	}
 	// Returns name
@@ -127,7 +127,8 @@ public:
 		cout << name << " gained " << XP << " XP!";
 		Pause();
 		experience += XP;
-		cout << name << " now has " << experience << " XP.";
+		cout << name << " now has " << experience << " XP." << endl;
+		Pause();
 		if (experience >= 50 * lvl) {
 			experience = 0;
 			mp = mpMax;
@@ -135,6 +136,7 @@ public:
 			cout << name << " leveled up!";
 			Pause();
 			++lvl;
+			learnMove();
 			srand((unsigned)time(NULL));
 			hp += rand() % 3 + 1;
 			mp += rand() % 3 + 1;
@@ -149,45 +151,62 @@ public:
 		if (typeClass == "Warrior") {
 			if (lvl == 2) {
 				move2 = Move("PSI Hypnosis A", 0, 4);
+				cout << name << " realized " << move2.getName() << "!";
 			}
 			else if (lvl == 3) {
 				move3 = Move("PSI Rockin A", 5, 5);
+				cout << name << " realized " << move3.getName() << "!";
 			}
 			else if (lvl == 4) {
 				move4 = Move("PSI Shield A", 0, 4);
+				cout << name << " realized " << move4.getName() << "!";
 			}
 			else if (lvl = 5) {
 				move2 = Move("PSI Paralysis A", 0, 5);
+				cout << name << " realized " << move2.getName() << "!";
 			}
 			else { cout << ""; }
 		}
 		else if (typeClass == "Mage") {
 			if (lvl == 2) {
 				move1 = Move("PSI Flash B", 8, 6);
+				cout << name << " realized " << move1.getName() << "!";
 			}
 			else if (lvl == 3) {
 				move2 = Move("PSI Thunder A", 11, 10);
+				cout << name << " realized " << move2.getName() << "!";
 			}
 			else if (lvl == 4) {
 				move3 = Move("PSI Magnet A", 0, 6);
+				cout << name << " realized " << move3.getName() << "!";
 			}
 			else if (lvl = 5) {
 				move3 = Move("PSI Magnet B", 0, 5);
+				cout << name << " realized " << move3.getName() << "!";
 			}
 		}
 		else {
 			if (lvl == 2) {
 				move2 = Move("PSI Lifeup A", 0, 5);
+				cout << name << " realized " << move2.getName() << "!";
 			}
 			else if (lvl == 3) {
 				move1 = Move("PSI Freeze B", 6, 5);
+				cout << name << " realized " << move1.getName() << "!";
 			}
 			else if (lvl == 4) {
 				move3 = Move("PSI Shield B", 0, 7);
+				cout << name << " realized " << move3.getName() << "!";
 			}
 			else if (lvl = 5) {
-				move3 = Move("PSI Lifeup B", 0, 8);
+				move2 = Move("PSI Lifeup B", 0, 8);
+				cout << name << " realized " << move3.getName() << "!";
 			}
 		}
+	}
+	// Restores MP and HP
+	void reset(){
+		hp = hpMax;
+		mp = mpMax;
 	}
 };

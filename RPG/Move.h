@@ -70,7 +70,7 @@ public:
 	void effect() {
 		tempPow = 0;
 		srand((unsigned)time(NULL));
-		if (moveName == "PSI Fire a" || moveName == "PSI Fire B") {
+		if (moveName == "PSI Fire A" || moveName == "PSI Fire B") {
 			int chance = rand() % 2;
 			if (chance == 1) {
 				cout << "Ouch! That's hot!";

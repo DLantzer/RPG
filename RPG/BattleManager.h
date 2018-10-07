@@ -23,12 +23,13 @@ public:
 			if (h.getMove(3) != "")
 				cout << ":: 3 :: " << h.getMove(3) << " :: POW: " << h.move3.getPow() << " MP: " << h.move3.getMPUsed() << endl;
 			if (h.getMove(4) != "")
-				cout << ":: 4 :: " << h.getMove(4) << " :: POW: " << h.move4.getPow() << " MP: " << h.move4.getMPUsed() << endl
-				<< " :: ";
+				cout << ":: 4 :: " << h.getMove(4) << " :: POW: " << h.move4.getPow() << " MP: " << h.move4.getMPUsed() << endl;
+			cout << " :: ";
 			int move;
 			cin >> move;
 			double dmg;
 			int mp;
+			cout << endl;
 			if (move == 0) { 
 				h.useMove(0); dmg = h.getAtk(); mp = 0;}
 			else if (move == 1) { 
@@ -66,6 +67,7 @@ public:
 			if (e.getHP() <= 0) {
 				cout << h.getName() << " defeated " << e.getName() << "!";
 				Pause();
+				h.reset();
 				h.getXP(e.getXP());
 				break;
 			}
@@ -73,6 +75,7 @@ public:
 			Pause();
 			cout << endl << h.getName() << " took " << heroDmg << " damage." << endl;
 			Pause();
+			h.setHP(-heroDmg);
 		}
 	}
 };
