@@ -6,7 +6,8 @@
 // Hero - NPC/PC that fights an Enemy
 class Hero:public Class, public SoundPlayer{
 private:
-	double experience;
+	double experience; // Amount of XP hero has
+	// Pause function
 	void Pause() {
 		Sleep(3000);
 		cout << endl;
@@ -86,6 +87,7 @@ public:
 	double getHP() {
 		return hp;
 	}
+	// Uses move, returns damage if any
 	double useMove(int slot) {
 		if (slot == 0) {
 			cout << endl << name << " hit the enemy!" << endl << endl;
@@ -116,9 +118,11 @@ public:
 		return 0;
 		}
 	}
+	// Returns Hero's XP
 	double showXP() {
 		return experience;
 	}
+	// Adds XP to total XP
 	void getXP(double XP) {
 		cout << name << " gained " << XP << " XP!";
 		Pause();
@@ -140,7 +144,8 @@ public:
 			hpMax = hp;
 		}
 	}
-	void levelUp() {
+	// Hero learns new move based on level
+	void learnMove() {
 		if (typeClass == "Warrior") {
 			if (lvl == 2) {
 				move2 = Move("PSI Hypnosis A", 0, 4);
