@@ -47,6 +47,8 @@ public:
 		else if (moveName == "PSI Paralysis A") { SoundManager.playParalysisA(); }
 		else if (moveName == "PSI Paralysis O") { SoundManager.playParalysisO(); }
 		else if (moveName == "PSI Rockin A") { SoundManager.playRockinA(); }
+		else if (moveName == "PSI Lifeup A") { SoundManager.playLifeupA(); }
+		else if (moveName == "PSI Lifeup B") { SoundManager.playLifeupB(); }
 		else if (moveName == "PSI Rockin B") { SoundManager.playRockinB(); }
 		else if (moveName == "PSI Rockin E") { SoundManager.playRockinE(); }
 		else if (moveName == "PSI Rockin O") { SoundManager.playRockinO(); }
