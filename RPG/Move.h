@@ -1,11 +1,12 @@
 #pragma once
 #include "SoundPlayer.h"
-using namespace std;
+#include "Hero.h"
+#include <time.h>
 // Move - An attack/support an Enemy or Hero can use
-class Move {
+class Move{
 private:
 	string className, moveName; // Move name
-	int pow, mpUsed, lvlLearned; // Move power, Move MP value
+	int pow, mpUsed, tempPow; // Move power, Move MP value, temporary power boost
 public:
 	// Default Constructor
 	Move() 
@@ -13,6 +14,7 @@ public:
 		moveName = "";
 		pow = 0;
 		mpUsed = 0;
+		tempPow = 0;
 	}
 	// Constructor
 	Move(string n, int p, int m) 
@@ -20,6 +22,7 @@ public:
 		moveName = n;
 		pow = p;
 		mpUsed = m;
+		tempPow = 0;
 	}
 	// Plays sound specific to move based on moveName
 	void playMoveSound() {
@@ -47,6 +50,8 @@ public:
 		else if (moveName == "PSI Paralysis A") { SoundManager.playParalysisA(); }
 		else if (moveName == "PSI Paralysis O") { SoundManager.playParalysisO(); }
 		else if (moveName == "PSI Rockin A") { SoundManager.playRockinA(); }
+		else if (moveName == "PSI Lifeup A") { SoundManager.playLifeupA(); }
+		else if (moveName == "PSI Lifeup B") { SoundManager.playLifeupB(); }
 		else if (moveName == "PSI Rockin B") { SoundManager.playRockinB(); }
 		else if (moveName == "PSI Rockin E") { SoundManager.playRockinE(); }
 		else if (moveName == "PSI Rockin O") { SoundManager.playRockinO(); }
@@ -61,11 +66,40 @@ public:
 		else if (moveName == "PSI Thunder O") { SoundManager.playThunderE(); }
 		else { cout << "Invalid name"; }
 	}
+	// Causes move effect
+	void effect() {
+		tempPow = 0;
+		srand((unsigned)time(NULL));
+		if (moveName == "PSI Fire A" || moveName == "PSI Fire B") {
+			int chance = rand() % 2;
+			if (chance == 1) {
+				cout << "Ouch! That's hot!";
+				Pause();
+				tempPow = 2;
+			}
+		}
+	}
 	// Returns move name
 	string getName() 
 	{
 		return moveName;
 	}
-	int getPow() { return pow; }
-	int getMPUsed() {return mpUsed;}
+	// Returns move power
+	int getPow() { 
+		return pow
+; 
+	}
+	// Returns move power + tempPow
+	int getFinalPow() {
+		return pow + tempPow;
+	}
+	// Returns move MP value
+	int getMPUsed() {
+		return mpUsed;
+	}
+	// Stops execution for 3 seconds
+	void Pause() {
+		Sleep(3000);
+		cout << endl;
+	}
 };

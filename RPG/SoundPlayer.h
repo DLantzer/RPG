@@ -7,6 +7,12 @@ public:
 	void playIntro() {
 		PlaySound(TEXT("Intro"), NULL, SND_SYNC);
 	}
+	void playLifeupA() {
+		PlaySound(TEXT("PSI Lifeup a"), NULL, SND_SYNC);
+	}
+	void playLifeupB() {
+		PlaySound(TEXT("PSI Lifeup B"), NULL, SND_SYNC);
+	}
 	void playBash() {
 		PlaySound(TEXT("bash"), NULL, SND_SYNC);
 	}
